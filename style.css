@@ -9,7 +9,12 @@ body {
   margin: 0;
 }
 
-h1,
+h1 {
+  font-family: "Nabla", system-ui;
+  font-size: 80px;
+  margin: 20px 0 40px 0;
+  text-align: center;
+}
 h2,
 h3 {
   font-family: "Jersey 10", sans-serif;
@@ -29,7 +34,19 @@ iframe {
 
 .main-content {
   display: flex;
-  height: 100vh;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.icon-column {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.icon-column a {
+  margin: 100% 0;
 }
 
 .main-screen {
