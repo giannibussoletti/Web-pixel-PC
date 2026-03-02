@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Jersey+10&family=Nabla&display=swap");
+
+body {
+  background-color: #008083;
+  font-family: "Geo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-size: 15pt;
+}
+
+iframe {
+  width: 768px;
+  height: 576px;
+  z-index: 10;
+}
+
+.main-content {
+  display: flex;
+  height: 100vh;
+}
+
+.main-screen {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
