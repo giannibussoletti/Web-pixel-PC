@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Jersey+10&family=Nabla&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: #c0c0c0;
   font-family: "Geo", sans-serif;
@@ -8,15 +14,6 @@ body {
   margin: 0;
 }
 
-h1 {
-  font-family: "Jersey 10", sans-serif;
-}
-
-#main-content {
-  max-width: 768px;
-  margin: 0 auto;
-}
-
 header {
   width: 100%;
   background-color: #000080;
@@ -24,6 +21,7 @@ header {
 }
 
 h1 {
+  font-family: "Jersey 10", sans-serif;
   margin: 0;
   padding: 5px 10px;
   font-size: 20px;
@@ -32,10 +30,46 @@ h1 {
   font-weight: 100;
 }
 
-form {
-  width: auto;
-  height: 80vh;
+p {
+  padding: 0 30px;
+}
+.content-wrapper {
+  height: 100%;
+}
+
+main {
+  height: 80%;
+  max-width: 768px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-flow: column wrap;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+}
+
+.contact-box p {
+  padding: 0;
+  margin-top: 0;
+}
+
+form,
+.contact-col {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+form {
+  gap: 10px;
+}
+
+form input {
+  padding: 10px 10px;
+}
+
+form input:nth-child(4) {
+  padding: 10px 10px 100px 10px;
 }
