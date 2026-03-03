@@ -1,9 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Jersey+10&family=Nabla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Jersey+10&display=swap");
 
 body {
-  background-image: url("./img/bg-image.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: #008083;
   font-family: "Geo", sans-serif;
   font-weight: 400;
@@ -13,11 +10,13 @@ body {
 }
 
 h1 {
-  font-family: "Nabla", system-ui;
-  font-size: 80px;
+  font-size: 5em;
   margin: 20px 0 40px 0;
   text-align: center;
+  color: rgb(255, 255, 255);
 }
+
+h1,
 h2,
 h3,
 #main-menu-btn {
@@ -34,7 +33,7 @@ iframe {
   width: 768px;
   height: 576px;
   z-index: 10;
-  border: none;
+  border: 3px inset #929292;
 }
 
 .main-content {
@@ -49,11 +48,14 @@ iframe {
   display: flex;
   flex-flow: column nowrap;
   gap: 10px;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
 .icon-column a {
   color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .icon-column a img {
@@ -61,17 +63,17 @@ iframe {
 }
 
 .window-title {
-  border: 5px groove #bcbcbc;
+  border: 3px outset #929292;
 }
 
 .window-title h2 {
   margin: 0;
   padding: 5px 10px;
   font-size: 20px;
-  background-color: #0000a8;
+  background-color: #000080;
   color: #fff;
   letter-spacing: 1px;
-  border-bottom: 3px solid #737373;
+  border: 3px solid #c0c4c8;
 }
 
 footer {
