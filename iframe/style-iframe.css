@@ -5,13 +5,23 @@ body {
   height: 100%;
 }
 
-body {
-  background-color: #c0c0c0;
+body,
+input::placeholder,
+button {
   font-family: "Geo", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+body {
+  background-color: #c0c0c0;
   color: #000;
   margin: 0;
+}
+
+input::placeholder,
+button {
+  font-size: 1.2em;
 }
 
 header {
@@ -37,6 +47,7 @@ a {
 
 a {
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .content-wrapper {
@@ -49,7 +60,6 @@ main {
 }
 
 .contact-box {
-  width: 100%;
   display: flex;
   gap: 50px;
 }
@@ -65,6 +75,11 @@ form,
   flex-flow: column wrap;
 }
 
+.contact-col img {
+  align-self: center;
+  width: 200px;
+}
+
 form {
   gap: 10px;
   width: 100%;
@@ -73,6 +88,14 @@ form {
 form button {
   padding: 8px 15px;
   align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px groove #737373;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1em;
 }
 
 form input {
