@@ -46,8 +46,8 @@ iframe {
 }
 
 .icon-column {
-  display: grid;
-  grid-template-columns: 30px 50px;
+  display: flex;
+  flex-flow: column nowrap;
   gap: 10px;
   align-items: center;
 }
