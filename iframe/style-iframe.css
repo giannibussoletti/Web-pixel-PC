@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Jersey+10&family=Nabla&display=swap");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css");
 
 body {
   background-color: #c0c0c0;
@@ -17,7 +16,7 @@ button {
 
 button,
 nav p:hover,
-#window-btn span:hover {
+.window-btn span:hover {
   cursor: pointer;
 }
 
@@ -56,7 +55,7 @@ nav hr {
   margin-left: 0.5em;
 }
 
-#window-title {
+.window-title {
   display: flex;
   background-color: #000080;
   align-items: center;
@@ -64,7 +63,7 @@ nav hr {
   padding: 3px 0;
 }
 
-#window-title span {
+.window-title span {
   box-sizing: border-box;
   display: inline-block;
   width: 22px;
@@ -79,7 +78,7 @@ nav hr {
   text-align: center;
 }
 
-#window-title span:first-child {
+.window-title span:first-child {
   line-height: 0.9;
 }
 
@@ -90,7 +89,17 @@ nav hr {
   scale: 0.9;
 }
 
-#window-btn {
+#grey-wnd-btn {
+  width: 14px;
+  height: 14px;
+  border: unset;
+  background-color: #c0c0c0;
+  border: 2px solid #737373;
+  border-top: 4px solid #737373;
+  margin: 2.5px 0 0 1px;
+}
+
+.window-btn {
   display: flex;
   align-items: center;
   padding: 0 8px;
@@ -106,7 +115,7 @@ form button {
 
 nav p:hover,
 form button:hover,
-#window-title span:hover:nth-child(odd) {
+.window-title span:hover:nth-child(odd) {
   background-color: #a2a2a2;
   border: 2px inset;
 }
