@@ -71,11 +71,12 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   background-color: #c0c4c8;
   text-transform: uppercase;
   padding: 4px 10px;
+  box-sizing: border-box;
 }
 
 /* .footer-menu {
@@ -110,4 +111,9 @@ footer {
 #main-menu-btn img {
   width: 15px;
   margin-right: 10px;
+}
+
+#bar-clock {
+  border: 2px inset;
+  padding: 5px 10px;
 }
