@@ -14,6 +14,11 @@ button {
   font-style: normal;
 }
 
+button,
+nav p:hover {
+  cursor: pointer;
+}
+
 input::placeholder,
 button {
   font-size: 1.2em;
@@ -21,8 +26,6 @@ button {
 
 header {
   width: 100%;
-  background-color: #000080;
-  border-bottom: 2px solid #737373;
 }
 
 h1 {
@@ -34,7 +37,6 @@ h1 {
   letter-spacing: 1px;
   font-weight: 100;
 }
-
 p,
 a {
   font-size: 1.2em;
@@ -43,6 +45,55 @@ a {
 a {
   margin-bottom: 10px;
   text-decoration: none;
+}
+
+nav hr {
+  margin: 0 auto;
+  width: 98%;
+  border-bottom: 1px solid #fff;
+}
+
+#nav-menu {
+  margin-left: 1em;
+}
+
+#window-title {
+  display: flex;
+  background-color: #000080;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#window-btn {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+#window-title span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  margin: 0 3px;
+}
+
+nav p,
+form button {
+  display: inline-block;
+  margin: 5px 2px;
+  padding: 0 5px;
+  border: 2px inset #00000000;
+}
+
+nav p:hover,
+form button:hover {
+  background-color: #a2a2a281;
+  border: 2px inset;
+}
+
+nav p::first-letter {
+  text-decoration: underline;
 }
 
 main {
@@ -82,17 +133,17 @@ form button {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px groove #737373;
   padding: 5px 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 1em;
+  border: 2px outset #fff;
 }
 
 form input {
   padding: 10px 10px;
-  border: 2px inset #737373;
-  outline: 2px inset #c0c0c0;
+  border: 1px inset #737373;
+  outline: 1px inset #c0c0c0;
 }
 
 form input:nth-child(4) {

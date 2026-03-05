@@ -41,7 +41,8 @@ main {
 iframe {
   width: 768px;
   height: 560px;
-  border: 3px outset #c0c4c8;
+  border: 2px outset #fff;
+  box-sizing: border-box;
 }
 
 /* colonna sinistra */
@@ -94,12 +95,18 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px groove #737373;
+  border: 2px outset #fff;
   padding: 5px 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 1em;
 }
+
+#main-menu-btn:hover {
+  background-color: #a2a2a281;
+  border: 2px inset;
+}
+
 #main-menu-btn img {
   width: 15px;
   margin-right: 10px;
