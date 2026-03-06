@@ -7,8 +7,9 @@ body {
 }
 
 body,
-input::placeholder,
-button {
+input,
+button,
+textarea {
   font-family: "Geo", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -40,6 +41,10 @@ a {
   font-size: 1.2em;
 }
 
+p {
+  line-height: 1.1em;
+  margin: 0.5em 0 1.3em;
+}
 a {
   margin-bottom: 10px;
   text-decoration: none;
@@ -82,13 +87,6 @@ nav hr {
   line-height: 0.9;
 }
 
-.fa-regular {
-  color: #737373;
-  padding: -1px;
-  margin: -1px;
-  scale: 0.9;
-}
-
 #grey-wnd-btn {
   width: 14px;
   height: 14px;
@@ -96,7 +94,7 @@ nav hr {
   background-color: #c0c0c0;
   border: 2px solid #737373;
   border-top: 4px solid #737373;
-  margin: 2.5px 0 0 1px;
+  margin: 2.5px 0 0 0;
 }
 
 .window-btn {
@@ -105,8 +103,7 @@ nav hr {
   padding: 0 8px;
 }
 
-nav p,
-form button {
+nav p {
   display: inline-block;
   margin: 5px 2px;
   padding: 0 5px;
@@ -131,7 +128,7 @@ main {
 
 .contact-box {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 
 .contact-box p {
@@ -139,32 +136,24 @@ main {
   margin: 0;
 }
 
+.contact-col {
+  max-width: 215px;
+}
+
+.contact-col p {
+  margin-bottom: 10px;
+}
+
 .contact-col img {
-  align-self: center;
+  margin-top: 30px;
   width: 200px;
 }
 
-.contact-col {
-  display: flex;
-  flex-flow: column wrap;
-}
-
 form {
-  gap: 10px;
   width: 100%;
 }
 
-#form-info {
-  display: grid;
-  flex-direction: row;
-}
-
 form button {
-  padding: 8px 15px;
-  align-self: flex-end;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 5px 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -172,12 +161,44 @@ form button {
   border: 2px outset #fff;
 }
 
-form input {
+.info-fields {
+  margin: 0;
+}
+
+.info-fields textarea,
+.info-fields input {
+  vertical-align: text-top;
+  width: 79.4%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
   padding: 10px 10px;
   border: 1px inset #737373;
   outline: 1px inset #c0c0c0;
 }
 
-form input:nth-child(7) {
-  padding: 10px 10px 100px 10px;
+.info-fields label {
+  display: inline-block;
+  width: 80px;
+  text-align: start;
+}
+
+.info-fields #text {
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+}
+
+#btn-align {
+  text-align: end;
+  margin-right: 3px;
+}
+
+input,
+textarea {
+  font-size: 1em;
+  max-width: 100%;
+}
+textarea {
+  resize: none;
+  overflow: hidden;
 }
