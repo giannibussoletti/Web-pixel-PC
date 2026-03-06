@@ -48,20 +48,22 @@ iframe {
 /* colonna sinistra */
 .icon-column {
   display: flex;
-  flex-flow: column nowrap;
-  gap: 10px;
-  justify-content: space-evenly;
+  flex-flow: column wrap;
+  justify-content: space-around;
 }
 
 .icon-column a {
   color: #fff;
-  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3em;
 }
 
 .icon-column a img {
-  margin: 10px;
+  max-width: 60px;
+  display: block;
+  margin: 0 auto 10px;
 }
 
 /* footer */
