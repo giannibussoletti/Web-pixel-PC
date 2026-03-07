@@ -120,8 +120,3 @@ nav p:hover,
 nav p::first-letter {
   text-decoration: underline;
 }
-
-main {
-  height: 80%;
-  margin: 0 50px;
-}
