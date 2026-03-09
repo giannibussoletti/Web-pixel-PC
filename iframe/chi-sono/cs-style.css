@@ -15,6 +15,11 @@ main {
   justify-content: center;
 }
 
+#who-text div {
+  text-align: end;
+  font-size: 0.8em;
+}
+
 main h1 {
   color: #000;
   padding: 0;
